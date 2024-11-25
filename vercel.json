@@ -1,5 +1,8 @@
 {
-  "rewrites":  [
-    {"source": "/(.*)", "destination": "/"}
-  ]
+  "buildCommand": "cd apps/web && yarn build",
+  "outputDirectory": "apps/web/dist",
+  "installCommand": "yarn install --frozen-lockfile",
+  "environment": {
+    "NODE_VERSION": "18.x"
+  }
 }
